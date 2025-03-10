@@ -9,12 +9,15 @@ import java.sql.SQLException;
 public class zombieRowMapper implements RowMapper<zombie> {
     @Override
     public zombie mapRow(ResultSet rs, int rowNum) throws SQLException {
-
         return new zombie(
-                rs.getInt("id_map"),      // Récupère l'id_map de la ligne
-                rs.getInt("ligne"),       // Récupère la ligne de la table
-                rs.getInt("colonne"),     // Récupère la colonne de la table
-                rs.getString("chemin_image") // Récupère le chemin de l'image
-        );
+                rs.getInt("id_zombie"),
+                rs.getString("nom"),
+                rs.getInt("point_de_vie"),
+                rs.getDouble("attaque_par_seconde"),
+                rs.getInt("degat_attaque"),
+                rs.getDouble("vitesse_de_deplacement"),
+                rs.getString("chemin_image"),
+                rs.getInt("id_map")
+                );
     }
 }

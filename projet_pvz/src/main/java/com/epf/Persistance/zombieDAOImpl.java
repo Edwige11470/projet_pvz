@@ -1,7 +1,6 @@
 package com.epf.Persistance;
 
 import com.epf.Core.zombie;
-import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 import java.util.List;
@@ -32,7 +31,7 @@ public class zombieDAOImpl implements zombieDAO {
     @Override
     public List<zombie> readAll() {
         String sql = "SELECT * FROM zombies";
-        return jdbcTemplate.query(sql, new ZombieRowMapper());
+        return jdbcTemplate.query(sql, new zombieRowMapper());
     }
 
     @Override
