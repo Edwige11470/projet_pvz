@@ -1,6 +1,6 @@
 package com.epf.Persistance;
 
-import com.epf.Core.map;
+import com.epf.Core.model.map;
 import org.springframework.jdbc.core.RowMapper;
 
 import java.sql.ResultSet;

@@ -1,10 +1,11 @@
-package com.epf.Persistance;
+package com.epf.Core.service;
 
+import com.epf.Core.model.plante;
 import com.epf.Core.model.zombie;
+
 import java.util.List;
 
-public interface zombieDAO {
-
+public interface zombieService {
     void create(zombie Zombie);
     zombie read(int id);
     List<zombie> readAll();

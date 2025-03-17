@@ -1,6 +1,6 @@
 package com.epf.Persistance;
 
-import com.epf.Core.zombie;
+import com.epf.Core.model.zombie;
 import org.springframework.jdbc.core.RowMapper;
 
 import java.sql.ResultSet;

@@ -1,12 +1,12 @@
-package com.epf.Core;
+package com.epf.API.DTO;
 
-public class map {
+public class mapDTO {
     private int id_map;
     private int ligne;
     private int colonne;
     private String chemin_image;
 
-    public map(int id_map, int ligne, int colonne, String chemin_image) {
+    public mapDTO(int id_map, int ligne, int colonne, String chemin_image) {
         this.id_map = id_map;
         this.ligne = ligne;
         this.colonne = colonne;
@@ -41,5 +41,6 @@ public class map {
     public void setChemin_image(String chemin_image) {
         this.chemin_image = chemin_image;
     }
+
 }
 

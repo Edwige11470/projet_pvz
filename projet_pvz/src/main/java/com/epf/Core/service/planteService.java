@@ -1,11 +1,10 @@
-package com.epf.Persistance;
+package com.epf.Core.service;
 
 import com.epf.Core.model.plante;
 
 import java.util.List;
 
-public interface planteDAO {
-
+public interface planteService {
     void create(plante Plante);
     plante read(int id);
     List<plante> readAll();

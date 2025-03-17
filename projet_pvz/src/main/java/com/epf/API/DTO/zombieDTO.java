@@ -1,32 +1,29 @@
-package com.epf.Core;
+package com.epf.API.DTO;
 
-public class plante {
-    private int id_plante;
+public class zombieDTO {
+    private int id_zombie;
     private String nom;
     private int point_de_vie;
     private double attaque_par_seconde;
     private int degat_attaque;
-    private int cout;
-    private double soleil_par_seconde;
-    private Effet effet;
+    private double vitesse_de_deplacement;
     private String chemin_image;
+    private int id_map;
 
-    public plante(int id_plante, String nom, int point_de_vie, double attaque_par_seconde, int degat_attaque, int cout, double soleil_par_seconde, Effet effet, String chemin_image) {
-        this.id_plante = id_plante;
+    public zombieDTO(int id_zombie, String nom, int point_de_vie, double attaque_par_seconde, int degat_attaque, double vitesse_de_deplacement, String chemin_image, int id_map) {
+        this.id_zombie = id_zombie;
         this.nom = nom;
         this.point_de_vie = point_de_vie;
         this.attaque_par_seconde = attaque_par_seconde;
         this.degat_attaque = degat_attaque;
-        this.cout = cout;
-        this.soleil_par_seconde = soleil_par_seconde;
-        this.effet = effet;
+        this.vitesse_de_deplacement = vitesse_de_deplacement;
         this.chemin_image = chemin_image;
-
+        this.id_map = id_map;
     }
 
     //getters:
-    public int getId_plante() {
-        return id_plante;
+    public int getId_zombie() {
+        return id_zombie;
     }
     public String getNom() {
         return nom;
@@ -40,22 +37,19 @@ public class plante {
     public int getDegat_attaque() {
         return degat_attaque;
     }
-    public int getCout() {
-        return cout;
-    }
-    public double getSoleil_par_seconde() {
-        return soleil_par_seconde;
-    }
-    public Effet getEffet() {
-        return effet;
+    public double getVitesse_de_deplacement() {
+        return vitesse_de_deplacement;
     }
     public String getChemin_image() {
         return chemin_image;
     }
+    public int getId_map() {
+        return id_map;
+    }
 
     //setters:
-    public void setId_plante(int id_plante) {
-        this.id_plante = id_plante;
+    public void setId_zombie(int id_zombie) {
+        this.id_zombie = id_zombie;
     }
     public void setNom(String nom) {
         this.nom = nom;
@@ -69,16 +63,13 @@ public class plante {
     public void setDegat_attaque(int degat_attaque) {
         this.degat_attaque = degat_attaque;
     }
-    public void setCout(int cout) {
-        this.cout = cout;
-    }
-    public void setSoleil_par_seconde(double soleil_par_seconde) {
-        this.soleil_par_seconde = soleil_par_seconde;
-    }
-    public void setEffet(Effet effet) {
-        this.effet = effet;
+    public void setVitesse_de_deplacement(double vitesse_de_deplacement) {
+        this.vitesse_de_deplacement = vitesse_de_deplacement;
     }
     public void setChemin_image(String chemin_image) {
         this.chemin_image = chemin_image;
+    }
+    public void setId_map(int id_map) {
+        this.id_map = id_map;
     }
 }

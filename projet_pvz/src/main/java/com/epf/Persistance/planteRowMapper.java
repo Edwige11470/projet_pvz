@@ -1,7 +1,7 @@
 package com.epf.Persistance;
 
-import com.epf.Core.plante;
-import com.epf.Core.Effet;
+import com.epf.Core.model.plante;
+import com.epf.Core.model.Effet;
 import org.springframework.jdbc.core.RowMapper;
 
 import java.sql.ResultSet;

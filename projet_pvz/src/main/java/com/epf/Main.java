@@ -1,5 +1,5 @@
 package com.epf;
-import configuration.config;
+import com.epf.configuration.config;
 
 
 public class Main {

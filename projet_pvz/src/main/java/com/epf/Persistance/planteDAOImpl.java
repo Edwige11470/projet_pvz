@@ -1,6 +1,6 @@
 package com.epf.Persistance;
 
-import com.epf.Core.plante;
+import com.epf.Core.model.plante;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 import java.util.List;
